@@ -143,7 +143,7 @@ int main(void)
 	 	 	 	 	 }*/
 	 	 	 	 	output1=(ComputePID( MPU6050.KalmanAngleX, Target_Angle)+90);
 	 	 	 	 	output2=(ComputePID( MPU6050.KalmanAngleY, Target_Angle2)+90);
-	 	 	 	 	Angle=map(output2,57,125,10,170);
+	 	 	 	 	Angle=map(output2,57,125,10,170);/*alieron servo max up 170°min down 10° */
 	 	 	 		Roll=map(output1,57,125,10,170);
 	 	 	 	 	if(Angle>160)
 	 	 	 	 	{
